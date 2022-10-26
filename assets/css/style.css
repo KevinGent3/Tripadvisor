@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Trip Sans Regular";
+  src: url("../fonts/TripSans-Regular.eot");
+  src: url("../fonts/TripSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TripSans-Regular.woff2") format("woff2"),
+    url("../fonts/TripSans-Regular.woff") format("woff"),
+    url("../fonts/TripSans-Regular.ttf") format("truetype"),
+    url("../fonts//TripSans-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Trip Sans Medium";
+  src: url("../fonts/TripSans-Medium.eot");
+  src: url("..fonts/TripSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TripSans-Medium.woff2") format("woff2"),
+    url("../fonts//TripSans-Medium.woff") format("woff"),
+    url("../fonts/TripSans-Medium.ttf") format("truetype"),
+    url("../fonts/TripSans-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Trip Sans Regular";
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  background: lavender;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 200px;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-family: "Trip Sans Medium";
+}
+
+.primary-nav .menu-item {
+  padding: 15px;
+}
+
+.primary-nav button {
+  font-size: 14px;
+  background: black;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  margin-right: 5px;
+}
+.search {
+  border: solid grey 1px;
+  border-radius: 20px;
+  width: 318px;
+  height: 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5px;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-block h1 {
+  font-size: 50px;
+  font-family: "Trip Sans Medium";
+}
+.first-block span {
+  color: red;
+}
+.first-block p {
+  font-size: 10px;
+  font-family: "Trip Sans Medium";
+}
+.secondary-nav {
+  display: flex;
+
+  justify-content: space-between;
+}
+.secondary-nav .menu-item {
+  border: solid 1px black;
+  border-radius: 10px;
+  width: 179px;
+  margin-right: 5px;
+  margin-top: 30px;
+  height: 50px;
+  padding-top: 22px;
+  padding-left: 17px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.images {
+  /* background: salmon; */
+  margin-top: 50px;
+  height: 400px;
+  display: flex;
+  gap: 2px;
+}
+
+.images .left {
+  flex: 4;
+  /* background: blue; */
+  background-image: url("../img/eiffeltower.jpg");
+}
+
+.images .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.images .right-top {
+  /* background: green; */
+  background-image: url("../img/moto.jpg");
+
+  flex: 1;
+}
+
+.images .right-bottom {
+  /* background: yellow; */
+  background-image: url("../img/eiffeltower.jpg");
+  flex: 1;
+}
+
+.images .center-background {
+  background-size: cover;
+}
