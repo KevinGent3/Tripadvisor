@@ -27,11 +27,7 @@ body {
   font-family: "Trip Sans Regular";
 }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  background: lavender;
-}
+/* background: lavender; */
 
 header {
   display: flex;
@@ -119,7 +115,7 @@ header img {
 .images .left {
   flex: 4;
   /* background: blue; */
-  background-image: url("../img/eiffeltower.jpg");
+  background-image: url("../img/quai.jpg");
 }
 
 .images .right {
@@ -144,4 +140,131 @@ header img {
 
 .images .center-background {
   background-size: cover;
+}
+.presentation {
+  width: 50%;
+  padding-top: 50px;
+}
+h2 {
+  font-family: "Trip Sans Medium";
+  font-size: 24px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.presentation p {
+  padding-top: 10px;
+}
+
+carousel-main-title {
+  font-family: "Trip Sans Medium";
+  font-size: 34px;
+  margin: 20px 0;
+}
+
+.carousel {
+  height: 300px;
+  display: flex;
+}
+
+.carousel-title {
+  flex: 1;
+}
+.main-title {
+  font-family: Trip Sans Medium;
+  font-size: 20px;
+}
+.note {
+  color: grey;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.note a {
+  margin-top: 5px;
+  color: gray;
+}
+
+.carousel-scroll {
+  flex: 3;
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+}
+.carousel-scroll-item {
+  flex: calc((100% / 3) - 10px);
+  flex-shrink: 0;
+}
+
+.img-container {
+  height: 60%;
+  position: relative;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-container .absolute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+  font-size: 30px;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.img-container .top-activity {
+  position: relative;
+  bottom: 70px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background: orange;
+}
+.img-container .top-activity2 {
+  position: relative;
+  bottom: 70px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background: green;
+}
+.container {
+  height: 100%;
+  width: 1024px;
+  margin: auto;
+  background: red;
+}
+
+@media (min-width: 576px) {
+  .container {
+    background: blue;
+  }
+  .search {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    background: purple;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    background: yellow;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    background: green;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    background: pink;
+  }
 }
